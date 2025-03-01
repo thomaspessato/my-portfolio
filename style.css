@@ -1,0 +1,147 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #ffffff, #f7f7f7);
+  color: #333;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin: 0 1rem;
+}
+nav a {
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #007aff;
+}
+
+/* Main Content */
+main {
+  margin-top: 80px;
+}
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* Home Section with Bold Gradient */
+#home {
+  background: linear-gradient(135deg, #007aff, #00c6ff);
+  color: #fff;
+}
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* About, Portfolio, Contact Sections */
+#about, #portfolio, #contact {
+  background: #fff;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.portfolio-item {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.portfolio-item:hover {
+  transform: scale(1.03);
+}
+.portfolio-item img {
+  width: 100%;
+  display: block;
+}
+.portfolio-item p {
+  padding: 20px;
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+form input,
+form textarea {
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+form button {
+  padding: 15px;
+  border: none;
+  background: #007aff;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+form button:hover {
+  background: #005bb5;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  background: #f7f7f7;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
